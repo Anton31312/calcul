@@ -1,0 +1,235 @@
+﻿<Window x:Class="fed1isp11_17.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:fed1isp11_17"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        Height="450" 
+        Width="800"
+        WindowStartupLocation="CenterScreen"
+        MaxHeight="450"
+        MaxWidth="800"
+        MinHeight="450"
+        MinWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <WrapPanel HorizontalAlignment="Center"
+                   VerticalAlignment="Center">
+            <TextBox x:Name="tbNum1"
+                     Height="40"
+                     Width="100"
+                     FontSize="30"
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center">
+            </TextBox>
+
+            <TextBlock HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="30"> 
+                +
+            </TextBlock>
+
+            <TextBox x:Name="tbNum2"
+                     Height="40"
+                     Width="100"
+                     FontSize="30"
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center">
+            </TextBox>
+
+            <TextBlock HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="30"> 
+                =
+            </TextBlock>
+
+            <TextBox x:Name="tbResult"
+                     Height="40"
+                     Width="100"
+                     FontSize="30"
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center">
+            </TextBox>
+        </WrapPanel>
+
+        <Button x:Name="btnSum"
+                    Height="40"
+                    Width="100"
+                    Content="Сложить"
+                    HorizontalAlignment="Right"
+                    Margin="30"
+                    Click="btnSum_Click"/>
+
+
+        <WrapPanel HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Grid.RowSpan="2">
+            <TextBox x:Name="tbNum3"
+                     Height="40"
+                     Width="100"
+                     FontSize="30"
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center"
+                     Grid.RowSpan="2">
+            </TextBox>
+
+            <TextBlock HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="30"
+                       Grid.RowSpan="2"> 
+                -
+            </TextBlock>
+
+            <TextBox x:Name="tbNum4"
+                     Height="40"
+                     Width="100"
+                     FontSize="30"
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center">
+            </TextBox>
+
+            <TextBlock HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="30"
+                       Grid.RowSpan="2"> 
+                =
+            </TextBlock>
+
+            <TextBox x:Name="tbSub"
+                     Height="40"
+                     Width="100"
+                     FontSize="30"
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center"
+                     Grid.RowSpan="2">
+            </TextBox>
+        </WrapPanel>
+
+        <Button x:Name="btnSub"
+                    Height="40"
+                    Width="100"
+                    Content="Вычесть"
+                    HorizontalAlignment="Right"
+                    Margin="30"
+                    Click="btnSub_Click"
+                    Grid.RowSpan="2"/>
+
+        
+        
+        <WrapPanel HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Grid.RowSpan="3">
+            <TextBox x:Name="tbNum5"
+                     Height="40"
+                     Width="100"
+                     FontSize="30"
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center"
+                     >
+            </TextBox>
+
+            <TextBlock HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="30"
+                       > 
+                x
+            </TextBlock>
+
+            <TextBox x:Name="tbNum6"
+                     Height="40"
+                     Width="100"
+                     FontSize="30"
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center">
+            </TextBox>
+
+            <TextBlock HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="30"
+                       > 
+                =
+            </TextBlock>
+
+            <TextBox x:Name="tbMult"
+                     Height="40"
+                     Width="100"
+                     FontSize="30"
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center"
+                    >
+            </TextBox>
+        </WrapPanel>
+
+        <Button x:Name="btnMult"
+                    Height="40"
+                    Width="100"
+                    Content="Умножить"
+                    HorizontalAlignment="Right"
+                    Margin="30"
+                    Click="btnMult_Click"
+                    Grid.RowSpan="3"/>
+
+
+        <WrapPanel HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Grid.RowSpan="4">
+            <TextBox x:Name="tbNum7"
+                     Height="40"
+                     Width="100"
+                     FontSize="30"
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center"
+                     >
+            </TextBox>
+
+            <TextBlock HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="30"
+                       > 
+                /
+            </TextBlock>
+
+            <TextBox x:Name="tbNum8"
+                     Height="40"
+                     Width="100"
+                     FontSize="30"
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center">
+            </TextBox>
+
+            <TextBlock HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="30"
+                       > 
+                =
+            </TextBlock>
+
+            <TextBox x:Name="tbDiv"
+                     Height="40"
+                     Width="100"
+                     FontSize="30"
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center"
+                    >
+            </TextBox>
+        </WrapPanel>
+
+        <Button x:Name="btnDiv"
+                    Height="40"
+                    Width="100"
+                    Content="Разделить"
+                    HorizontalAlignment="Right"
+                    Margin="30"
+                    Click="btnDiv_Click"
+                    Grid.RowSpan="4"/>
+
+    </Grid>
+</Window>
